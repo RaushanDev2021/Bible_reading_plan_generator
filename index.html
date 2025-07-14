@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faithfully Designed - Bible Reading Plan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📖 Faithfully Designed</h1>
+  <p>Create your custom Bible reading plan</p>
+
+  <div class="form-group">
+    <label for="plan">Choose a Reading Plan:</label>
+    <select id="plan">
+      <option value="30days">30-Day Gospels</option>
+      <option value="365days">1-Year Bible</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate">
+  </div>
+
+  <div class="form-group">
+    <button onclick="generatePlan()">Generate Plan</button>
+    <button onclick="downloadPDF()">Download as PDF</button>
+  </div>
+
+  <div id="planDisplay"></div>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</body>
+</html>
